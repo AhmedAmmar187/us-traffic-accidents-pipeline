@@ -10,7 +10,8 @@ The pipeline follows the standard **Medallion/Data Warehouse architecture** part
 
 1. **Extract**: Automatically scans and merges fragmented yearly data across three main domains (`Accidents`, `Vehicles`, and `People`) utilizing safe type-casting and explicit encoding handling (`ISO-8859-1`).
 2. **Transform**: Drops duplicates, handles missing records from the pandemic period, constructs dimension tables, and joins them back to create a central Fact Table, resulting in a clean **Star Schema** layout.
-3. **Load**: Shipped directly into a local wearhouse
+3. **Load**: Shipped directly into a local warehouse.
+
 ---
 
 ## 📂 Project Structure
@@ -28,6 +29,7 @@ us-traffic-accidents-pipeline/
 │
 ├── requirements.txt                 # Project dependencies
 └── .gitignore                       # Ensures local large data binaries remain private
+```
 
 ---
 
@@ -50,17 +52,16 @@ Orchestration: Apache Airflow
 
 Data Wrangling: Pandas & NumPy
 
-Storage: Local
+Storage: Local SQLite Data Warehouse
 
 ⚡ How to Run Local Testing
 Clone this repository:
+
 git clone [https://github.com/AhmedAmmar187/us-traffic-accidents-pipeline.git](https://github.com/AhmedAmmar187/us-traffic-accidents-pipeline.git)
 cd us-traffic-accidents-pipeline
-Place the Kaggle source raw CSV files inside the data/raw/ directory.
+Prepare Data: Place the Kaggle source raw CSV files inside the data/raw/ directory.
 
 Install dependencies:
+
 pip install -r requirements.txt
-
-Run scripts manually or integrate the dags/ folder directly into your local Airflow home directory.
----
-
+Execution: Run scripts manually or integrate the dags/ folder directly into your local Airflow home directory.
