@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+# Ignore data files
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.db
+
+# Python environment & caches
+__pycache__/
+*.pyc
+.venv/
+=======
+# Ignore data files
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.db
+
+# Python environment & caches
+__pycache__/
+*.pyc
+.venv/
+>>>>>>> fa6786afb2a8f5021c5e021d92fd73a40fa1ea65
+.env

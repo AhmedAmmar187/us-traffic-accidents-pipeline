@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+apache-airflow==3.0.0
+pandas==2.2.0
+=======
+apache-airflow==3.0.0
+pandas==2.2.0
+>>>>>>> fa6786afb2a8f5021c5e021d92fd73a40fa1ea65
+numpy==1.26.0
